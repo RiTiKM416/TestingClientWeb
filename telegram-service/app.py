@@ -1,3 +1,8 @@
+
+import urllib.parse
+import werkzeug.urls
+werkzeug.urls.url_quote = urllib.parse.quote
+
 from flask import Flask
 from threading import Thread
 import os
