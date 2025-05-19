@@ -1,8 +1,7 @@
-Flask==2.0.3
+Flask>=2.0.0,<2.3.0
 telethon==1.28.5
 gunicorn==20.1.0
 python-dotenv==0.19.2
-Flask==2.2.5
 Werkzeug<3.0
 # optionally pin more precisely:
 # Werkzeug==2.2.2
