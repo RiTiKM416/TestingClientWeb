@@ -6,7 +6,7 @@ import re
 class TelegramService:
     def __init__(self, api_id, api_hash, session_str):
         self.client = TelegramClient(
-            StringSession(session_str),
+            StringSession(TG_SESSION_STR),
             api_id,
             api_hash,
             connection_retries=3
