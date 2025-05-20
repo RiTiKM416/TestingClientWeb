@@ -1,0 +1,2 @@
+from telethon.sessions import StringSession
+print("Your session string:", StringSession.save(client.session))
