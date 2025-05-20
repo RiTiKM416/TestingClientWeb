@@ -6,7 +6,7 @@ import asyncio
 import re
 
 # Configuration (Edit these values)
-GROUP_ID = -1002531112998  # Your target group ID
+GROUP_ID = -1001967074345  # Your target group ID
 LOG_GROUP_ID = -1002629087320  # Your log group ID
 RESPONSE_TEXT = """Device name : Iphone 14 plus
 udid : 00008110-00187460363A401E"""
