@@ -7,6 +7,9 @@ from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.types import Message
 
+# Import the restart plugin
+from plugins.restart_plugin import register_restart_handler
+
 class Userbot:
     def __init__(self):
         # Get all config from environment variables (Railway-friendly)
@@ -23,6 +26,9 @@ class Userbot:
             api_hash=self.config['api_hash']
         )
         
+        # Register the restart handler plugin
+        register_restart_handler(self.client)
+
         self.plugins = []
         self.plugins_dir = Path(__file__).parent / "plugins"
 
@@ -40,7 +46,10 @@ class Userbot:
                     f"plugins.{plugin_name}", 
                     fromlist=[plugin_name]
                 )
-                await module.initialize(self)
+                # Initialize plugin if it has an 'initialize' coroutine
+                if hasattr(module, 'initialize') and asyncio.iscoroutinefunction(module.initialize):
+                    await module.initialize(self)
+
                 self.plugins.append(plugin_name)
                 print(f"Loaded plugin: {plugin_name}")
             except Exception as e:
