@@ -8,7 +8,7 @@ import re
 # Configuration (Edit these values)
 GROUP_ID = -1001967074345  # Your target group ID
 LOG_GROUP_ID = -1002629087320  # Your log group ID
-RESPONSE_TEXT = """me"""
+RESPONSE_TEXT = """udid : 00008110-001A54222E85401E"""
 COOLDOWN_SECONDS = 600  # 10 minutes cooldown
 ARTIFICIAL_DELAY = 2  # 2 seconds
 
