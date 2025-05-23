@@ -13,12 +13,12 @@ async def initialize(bot):
                 "👙 She's getting naked...",
                 "👔 Removing your clothes...",
                 "🍆 She saw your peenar...",
-                "😱 Visibly terrified...",
+                "😒 Visibly disgusted...",
                 "📏 Trying to measure...",
                 ("❌ **Execution Failed**\n"
-                 "🚨 Error 404: Size mismatch detected Too Big to insert\n"
+                 "🚨 Error 404: Size mismatch detected Too small to insert\n"
                  "🇷🇺 Russian girl gone home.\n"
-                 "💡 Recommendation: cut your peenar 😕")
+                 "💡 Recommendation: grow your peenar 😕")
             ]
 
             for stage in stages:
