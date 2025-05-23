@@ -26,4 +26,4 @@ async def initialize(bot):
                 await msg.edit(stage)
                 
         except Exception as e:
-            await event.edit(f"⚠️ System Malfunction: {str(e)}")
+            await event.edit(f"⚠️ System Malfunction: {str(e)}")  
