@@ -8,7 +8,7 @@ async def initialize(bot):
             msg = await event.edit("🔄 **Processing command...**")
             
             stages = [
-                "👔 Removing princesse's clothes...",
+                ("👔 Removing princesse's clothes...",
                 "🍆 princess taking my peenar...",
                  "loded princess pussy with my white sauce.\n"
                  "Princess is pregnent 🤰. ")
