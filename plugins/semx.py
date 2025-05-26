@@ -11,14 +11,10 @@ async def initialize(bot):
                 "🌌 Teleporting you to special room...",
                 "🚪 Russian agent inbound...",
                 "👙 She's getting naked...",
-                "👔 Removing your clothes...",
-                "🍆 She saw your peenar...",
-                "😒 Visibly disgusted...",
-                "📏 Trying to measure...",
-                ("❌ **Execution Failed**\n"
-                 "🚨 Error 404: Size mismatch detected Too small to insert\n"
-                 "🇷🇺 Russian girl gone home.\n"
-                 "💡 Recommendation: grow your peenar 😕")
+                "👔 Removing princesse's clothes...",
+                "🍆 princess taking my peenar...",
+                 "loded princess pussy with my white sauce.\n"
+                 "Princess is pregnent 🤰. ")
             ]
 
             for stage in stages:
