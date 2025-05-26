@@ -8,9 +8,6 @@ async def initialize(bot):
             msg = await event.edit("🔄 **Processing command...**")
             
             stages = [
-                "🌌 Teleporting you to special room...",
-                "🚪 Russian agent inbound...",
-                "👙 She's getting naked...",
                 "👔 Removing princesse's clothes...",
                 "🍆 princess taking my peenar...",
                  "loded princess pussy with my white sauce.\n"
