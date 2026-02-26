@@ -6,7 +6,7 @@ import asyncio
 import re
 
 # Configuration (Edit these values)
-GROUP_ID = -1002531112998  # Your target group ID
+GROUP_ID = -1001823036742  # Your target group ID
 LOG_GROUP_ID = -1002629087320  # Your log group ID
 RESPONSE_TEXT = """MY UID : 00008120-0002416C01DB401E
 device : IPhone 14 Pro Max"""
@@ -85,3 +85,4 @@ async def initialize(bot):
             print(error_log)
             if LOG_GROUP_ID != -1:
                 await bot.client.send_message(LOG_GROUP_ID, error_log)
+
