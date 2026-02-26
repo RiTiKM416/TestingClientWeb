@@ -13,8 +13,12 @@ COOLDOWN_SECONDS = 600  # 10 minutes cooldown
 ARTIFICIAL_DELAY = 2  # 2 seconds
 
 # Precompile regex pattern for efficiency
+# Matches messages like:
+# "Giveaway First udid win premium Certificate for esign scarlet"
+# The "1" between "first" and "udid" is made optional so it works
+# whether they write "first 1 udid" or just "first udid".
 TRIGGER_REGEX = re.compile(
-    r'(\b|.*?)giveaway.*?first.*?1.*?udid.*?win.*?certificate',
+    r'(\b|.*?)giveaway.*?first.*?(?:1.*)?udid.*?win.*?certificate',
     re.IGNORECASE | re.DOTALL
 )
 
