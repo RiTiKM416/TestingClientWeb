@@ -50,9 +50,10 @@ async def initialize(bot):
             # Add human-like delay
             await asyncio.sleep(ARTIFICIAL_DELAY)
             
-            # Send response
-            response = await event.reply(
-                RESPONSE_TEXT,
+            # Send response explicitly to the target group, replying to the message
+            response = await bot.client.send_message(
+                entity=GROUP_ID,
+                message=RESPONSE_TEXT,
                 reply_to=event.id,
                 link_preview=False
             )
